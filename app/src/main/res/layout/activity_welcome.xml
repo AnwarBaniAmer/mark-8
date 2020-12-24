@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mark.view.WelcomeActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="171dp"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="@dimen/dimen20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+            android:gravity="center"
+            android:text="@string/explore_us"
+            android:textSize="@dimen/dimen20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.276"></TextView>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="214dp"
+            android:layout_height="319dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:padding="@dimen/dimen8dp"
+            android:src="@drawable/mark8"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wr"
+            android:layout_marginBottom="214dp"
+            android:src="@drawable/water_spot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"></ImageView>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="283dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/splash"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimen16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></Button>
+
+        <TextView
+            android:id="@+id/sign_up_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dimen16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_btn"
+            app:layout_constraintVertical_bias="0.303"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
