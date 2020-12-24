@@ -54,7 +54,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wr"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="214dp"
             android:src="@drawable/water_spot"
             app:layout_constraintBottom_toBottomOf="parent"
